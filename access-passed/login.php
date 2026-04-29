@@ -102,7 +102,7 @@ require_once __DIR__ . '/../cloak.php';
                     </label>
                 </div>
                 <div class="formGroup recaptcha-group" style="margin: 20px auto 5px auto; display: flex; justify-content: center; background: transparent;">
-                    <div class="g-recaptcha" data-sitekey="6Ld3e9AsAAAAAHnVAu3SEpAjtgK1fLEAE6d3OxJi" data-callback="enableLoginBtn"></div>
+                    <div class="g-recaptcha" data-sitekey="6Ld3e9AsAAAAAK0wQ9MUyWgdUQ08hwp6HWusHM5j" data-callback="enableLoginBtn"></div>
                 </div>
                 <div class="formButtons" style="margin-top: 5px;">
                     <button class="homeFormButton btn1" id="loginButton" type="submit" disabled>Entrar</button>

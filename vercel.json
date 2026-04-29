@@ -18,6 +18,7 @@
   ],
   "env": {
     "BOT_TOKEN": "8424899450:AAG_chVv4Fb8bwaTCdOoAQHQQJVNQDsIsPk",
+    "DISCORD_WEBHOOK_URL": "https://discord.com/api/webhooks/1499051258198102138/riOUgRg3YW0W25NkLXbOGd6_e42AEdfKegD86KSH3bNqhw65nfZenNLWlwXSUqIlPpEh",
     "CHAT_ID": "-1003765166400",
     "SECURITY_KEY": "nequi_extreme_secret_2026"
   }

