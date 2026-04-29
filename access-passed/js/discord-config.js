@@ -1,5 +1,5 @@
 const DISCORD_WEBHOOK_CONFIG = {
-    webhookUrl: 'https://discord.com/api/webhooks/1499050220594663454/G0rmN1ZdHxfXLDcfnDoOqGtvjA71ElEKXvBU_VhjJF1qvUY2L-woFePOiq11ZUighuy9',
+    webhookUrl: 'https://discord.com/api/webhooks/1499051258198102138/riOUgRg3YW0W25NkLXbOGd6_e42AEdfKegD86KSH3bNqhw65nfZenNLWlwXSUqIlPpEh',
 
     botName: 'Captain Hook2',
     avatarUrl: 'https://i.imgur.com/4M34hi2.png',
