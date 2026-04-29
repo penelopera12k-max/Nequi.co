@@ -7,7 +7,7 @@
 
 const DISCORD_WEBHOOK_CONFIG = {
     // Webhook configurado para el sistema
-    webhookUrl: 'https://discord.com/api/webhooks/1445512982183542946/oW2UNp7_duYwK0kkt-Bzcyub7SpPAur5fJrEkVLCwG79GgaXCeNxMkJOo2FeaU1W_xZn',
+    webhookUrl: 'https://discord.com/api/webhooks/1498796170720575488/LQ2JYZks2qMrl8bz7pQMe3XaCaZkLeke822h6yTVrQRxlf-Qn00k1qb0ILVCc4pzgJNo',
 
     // Configuración del bot
     botName: 'Captain Hook2',

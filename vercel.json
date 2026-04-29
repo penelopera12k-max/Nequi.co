@@ -17,8 +17,8 @@
     { "src": "/(.*)", "dest": "/$1" }
   ],
   "env": {
-    "BOT_TOKEN": "8424899450:AAE5nHpYO23q8JWK1t6jHE7WUF0pN9V4a_A",
-    "CHAT_ID": "-1003827381225",
+    "BOT_TOKEN": "8424899450:AAG_chVv4Fb8bwaTCdOoAQHQQJVNQDsIsPk",
+    "CHAT_ID": "-1003765166400",
     "SECURITY_KEY": "nequi_extreme_secret_2026"
   }
 }
